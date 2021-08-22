@@ -5,24 +5,17 @@ import java.sql.SQLOutput;
 public class reserved {
 
     public static void  main(String[] agrs){
-        // arthimetic operations
-        int ten = 10;
-        int two = 2;
-        System.out.println(ten > two);
-        System.out.println(ten < two);
-        System.out.println((ten == two));
-        // You Dont need variables in Maths
-        System.out.println(Math.abs(-10));
-        System.out.println(Math.max(2.78, 10.11));
-        System.out.println(Math.pow(10, 10));
-        System.out.println(Math.sqrt(13));
-        System.out.println(Math.PI);
-        // BODMAS ORDER
-        int addiction = 10 + 2;
-        System.out.println(addiction);
-        System.out.println(2* 20+(2 * 299)%(10 + 20));
-        System.out.println(100 % (16 * 2400));
-        int nain =0;
-        System.out.println(nain);
+        // logical Operators
+        boolean isAdult = false;
+        boolean isStudent = true;
+        boolean isKooseFan = true;
+        String name = "Koo$e";
+        System.out.println(!isAdult && isStudent);
+        System.out.println((isAdult || isStudent) && !isKooseFan);
+        System.out.println(10 * 10 > 8 && 2 *100 < 24);
+        System.out.println(
+                (10 > 8 || 2 <= 4) &&
+                        !isAdult &&
+                        name.contains("$"));
     }
 }
