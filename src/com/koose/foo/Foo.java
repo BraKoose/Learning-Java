@@ -24,6 +24,11 @@ public class Foo {
         System.out.println("After  changing Alex");
         System.out.println(alex.name + " " + mariam.name);
 
+        Family koo = new Family("Koo");
+        Family fii = new Family("Uncle Fii");
+
+        System.out.println(koo.family);
+        System.out.println(fii.family.toUpperCase());
 
     }
 
@@ -32,6 +37,14 @@ public class Foo {
 
         Person(String name){
             this.name = name;
+        }
+    }
+
+    static class Family{
+        String family;
+
+        Family(String family){
+            this.family = family;
         }
     }
 }
