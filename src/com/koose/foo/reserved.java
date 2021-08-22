@@ -8,6 +8,9 @@ public class reserved {
         // arthimetic operations
         int ten = 10;
         int two = 2;
+        System.out.println(ten > two);
+        System.out.println(ten < two);
+        System.out.println((ten == two));
         // You Dont need variables in Maths
         System.out.println(Math.abs(-10));
         System.out.println(Math.max(2.78, 10.11));
