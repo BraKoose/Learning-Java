@@ -1,13 +1,19 @@
 package com.koose.bar.koko;
- // calculating for simple interest
+import java.util.Scanner;
 public class Bar {
-    public static void main(String[] args){
-        float p, r, t, si; // principalamount, rate, time, and simpple interest
-        p = 13000;
-        r = 12;
-        t = 2;
-        si = (p * r * t)/100;
-        System.out.println("simple interest is " +  si);
-    }
+    public static void main(String[] agrs ){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter Your First Number: ");
 
-}
+        int num1 = scan.nextInt();
+
+        System.out.print("Enter Your Second Number: ");
+
+        int num2 = scan.nextInt();
+        scan.close();
+
+        int product = num1 * num2;
+
+        System.out.println("Output: " + product);
+    }
+ }
